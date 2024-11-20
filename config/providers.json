@@ -1740,7 +1740,10 @@
     "oauth": {
       "origin": "https://{subdomain}.okta.com",
       "path": "oauth2/{version}/{path}",
-      "version": "v1"
+      "version": "v1",
+      "headers": {
+        "authorization": "Bearer {auth}"
+      }
     }
   },
   "onelogin": {
